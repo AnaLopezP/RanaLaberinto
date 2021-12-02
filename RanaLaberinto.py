@@ -50,5 +50,4 @@ creacionlab()
 for x in lab:
     print(" ".join(x))
 
-                
         
