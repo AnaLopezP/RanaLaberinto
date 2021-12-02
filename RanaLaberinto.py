@@ -3,7 +3,7 @@ laberinto = [
     [' ', 'X', ' ', ' ', ' ', ' '],
     [' ', 'B', ' ', 'B', 'T2', ' '],
     [' ', ' ', ' ', 'X', ' ', ' '],
-    [' ', ' ', ' ', 'X', ' ', ' ']
+    [' ', ' ', ' ', 'X', ' ', ' '],
     ['T2', 'T1', ' ', 'T1', ' ','S']
 ]
 
@@ -28,7 +28,7 @@ def creacionlab():
                 for j in range(0,6): #column
                                       
                         if tuple([i,j]) in muro:
-                                fia.append("X")
+                                fila.append("X")
                         elif tuple([i,j]) in bomba:
                                 fila.append("B")
                         elif tuple([i,j]) in teletransporte_1:
